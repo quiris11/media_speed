@@ -80,20 +80,20 @@ if(media.length){
 
 b_half.onclick = function(e){
     e.preventDefault();
-    update(.5);
-    range.value = .5;
-}
-
-b_one.onclick = function(e){
-    e.preventDefault();
     update(1);
     range.value = 1;
 }
 
-b_two.onclick = function(e){
+b_one.onclick = function(e){
     e.preventDefault();
     update(2);
     range.value = 2;
+}
+
+b_two.onclick = function(e){
+    e.preventDefault();
+    update(2.5);
+    range.value = 2.5;
 }
 
 b_three.onclick = function(e){
@@ -124,11 +124,11 @@ buttons.appendChild(b_three);
 buttons.appendChild(b_end);
 buttons.style.display = 'flex';
 buttons.style.justifyContent = 'space-between';
-b_half.textContent = '½x';
+b_half.textContent = '1x';
 b_half.href = '#';
-b_one.textContent = '1x';
+b_one.textContent = '2x';
 b_one.href = '#';
-b_two.textContent = '2x';
+b_two.textContent = '2.5x';
 b_two.href = '#';
 b_three.textContent = '3x';
 b_three.href = '#';
